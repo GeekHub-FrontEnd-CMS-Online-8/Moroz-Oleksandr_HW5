@@ -5,6 +5,7 @@
 	<title>Moroz-Oleksandr_HW5</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<header>
@@ -14,7 +15,9 @@
 		<h1>strict</h1>
 		<div class="line"><img src="img/line.png" alt="line"></div>
 		<p class="subtitle">STRICT is a responsive theme with a a clean and minimal look.</p>
-		<button class="call" type="submit">Call to action</button>
+		<form action="#portfolio" method="link">
+		<button class="call" type="submit" onClick='location.href="#portfolio"'>Call to action</button>
+		</form>
 		<span class="arrow"><img src="img/arrow.png" alt="arrow"></span>
 	</section>
 	<section class="design">
@@ -41,21 +44,46 @@
 			<p>This multipurpose theme is especially created  <br>to be used for d</p>
 		</div>
 	</section>
-	<section class="portfolio">
+	<section id="portfolio">
 		<h2>Showcase your work like a pro.</h2>
 		<p> Contact me if you like my work</p>
 		<div class="pictures">
 			<div class="diff">
 				<div class="diff_hover">
-					 <button class="btn1"></button>
-					<button class="btn2"></button>
+					<button class="btn1"><i class="fa fa-search-plus" aria-hidden="true"></i></button>
+					<button class="btn2"><i class="fa fa-link" aria-hidden="true"></i></button>
 				</div>
 			</div>
-			<img src="img/p2.png" alt="second">
-			<img src="img/p3.png" alt="third">
-			<img src="img/p4.png" alt="fourth">
-			<img src="img/p5.png" alt="fifth">
-			<img src="img/p6.png" alt="sixth">
+			<div class="diff1">
+				<div class="diff_hover">
+					<button class="btn1"><i class="fa fa-search-plus" aria-hidden="true"></i></button>
+					<button class="btn2"><i class="fa fa-link" aria-hidden="true"></i></button>
+				</div>
+			</div>
+			<div class="diff2">
+				<div class="diff_hover">
+					<button class="btn1"><i class="fa fa-search-plus" aria-hidden="true"></i></button>
+					<button class="btn2"><i class="fa fa-link" aria-hidden="true"></i></button>
+				</div>
+			</div>
+			<div class="diff3">
+				<div class="diff_hover">
+					<button class="btn1"><i class="fa fa-search-plus" aria-hidden="true"></i></button>
+					<button class="btn2"><i class="fa fa-link" aria-hidden="true"></i></button>
+				</div>
+			</div>
+			<div class="diff4">
+				<div class="diff_hover">
+					<button class="btn1"><i class="fa fa-search-plus" aria-hidden="true"></i></button>
+					<button class="btn2"><i class="fa fa-link" aria-hidden="true"></i></button>
+				</div>
+			</div>
+			<div class="diff5">
+				<div class="diff_hover">
+					<button class="btn1"><i class="fa fa-search-plus" aria-hidden="true"></i></button>
+					<button class="btn2"><i class="fa fa-link" aria-hidden="true"></i></button>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section class="stay">
@@ -77,13 +105,11 @@
 					<textarea placeholder="Message" cols="30" rows="30"></textarea>
 				</label>
 			</p>
-			<p>
-				<label>
-					<input type="checkbox"> Subscribe Newsletter
-				</label>
+			<p class="left">
+				<label for="box"></label>
+				<input type="checkbox" id="box"> <span class="check">Subscribe Newsletter</span>
+				<button type="submit" form="user" class="send">Send</button>
 			</p>
-		</form>
-		<button type="submit" form="user">Send</button>
 	</section>
 	<footer>
 		<p>Copyritht 2014, STRICT</p>

@@ -3,7 +3,7 @@
 	padding: 0;
 }
 
-header, #strict, .design, .future, .portfolio, .stay, footer {
+header, #strict, .design, .future, #portfolio, .stay, footer {
 	margin: 0 auto;
 }
 
@@ -60,6 +60,7 @@ header {
 	border-radius: 3px;
 	background: rgba(255, 255, 255, 0);
 	margin-top: 53px;
+	transition: 1s;
 }
 
 .call:hover {
@@ -175,7 +176,7 @@ h1 {
 	text-align: center;
 }
 
-.portfolio {
+#portfolio {
 	max-width: 1600px;
 	min-height: 898px;
 	background-color: #f6f9f9;
@@ -183,7 +184,7 @@ h1 {
 	flex-direction: column;
 }
 
-.portfolio>h2 {
+#portfolio>h2 {
 	font-family: 'lato regular', sans-serif;
 	font-size: 41px;
 	color: #2d3950;
@@ -192,7 +193,7 @@ h1 {
 	margin-bottom: 25px;
 }
 
-.portfolio p {
+#portfolio p {
 	font-family: 'lato regular', sans-serif;
 	font-size: 15px;
 	line-height: 23px;
@@ -211,14 +212,50 @@ h1 {
 	
 }
 
-.pictures>img {
-	width: 360px;
-	height: 259px;
-	padding: 10px;
-}
 
 .diff {
 	background-image: url(img/p1.png);
+	width: 360px;
+	height: 259px;
+	margin: 10px;
+	
+	
+}
+
+.diff1 {
+	background-image: url(img/p2.png);
+	width: 360px;
+	height: 259px;
+	margin: 10px;
+	
+}
+
+.diff2 {
+	background-image: url(img/p3.png);
+	width: 360px;
+	height: 259px;
+	margin: 10px;
+	
+}
+
+.diff3 {
+	background-image: url(img/p4.png);
+	width: 360px;
+	height: 259px;
+	margin: 10px;
+	
+}
+
+.diff4 {
+	background-image: url(img/p5.png);
+	width: 360px;
+	height: 259px;
+	margin: 10px;
+	
+}
+
+.diff5 {
+	background-image: url(img/p6.png);
 	width: 360px;
 	height: 259px;
 	margin: 10px;
@@ -235,6 +272,7 @@ h1 {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	transition: 1s;
 }
 
 .diff_hover:hover {
@@ -245,17 +283,17 @@ h1 {
 .btn1 {
 	width: 44px;
 	height: 44px;
-	
+	background: none;
 	border: 1px solid white;
 	border-radius: 3px;
 	margin-right: 9px;
-	background-image: url(img/fafa.png);;
+	
 }
 
 .btn2 {
 	width: 44px;
 	height: 44px;
-	background-image: url(img/bt2.png);
+	background: none;
 	border: 1px solid white;
 	border-radius: 3px;
 }
@@ -329,6 +367,16 @@ textarea[placeholder] {
 	padding: 20px 10px;
 }
 
+input[type="checkbox"] {
+	
+	margin: 0;
+	width: 18px;
+	height: 18px;
+	align-self: center;
+	vertical-align: sub;
+	
+}
+
 footer {
 	max-width: 1600px;
 	min-height: 90px;
@@ -354,14 +402,55 @@ footer div {
 }
 
 footer div a {
-	padding: 2px;
+	margin-left: 4px;
 	display: inline-block;
+	width: 40px;
+	height: 40px;
 }
 
 footer div a:hover {
-	color: #55acee;
-	box-sizing: content-box;
-	text-decoration: none;
-	border: none;
-	outline: none;
+	background-color: #55acee;
+	
 }
+
+.fa-search-plus {
+	color: white;
+}
+
+.fa-link {
+	color: white;
+}
+
+.left {
+	align-self: flex-start;
+}
+
+.check {
+	font-family: 'lato regular', sans-serif;
+	font-size: 15px;
+	color: #c7cacf;
+	margin-left: 15px;
+	vertical-align:baseline;
+}
+
+.send {
+	font-family: 'lato regular', sans-serif;
+	font-size: 18px;
+	line-height: 47px;
+	letter-spacing: 2px;
+	color: #fff;
+	width: 140px;
+	height: 45px;
+	border: 1px solid #15a4fa;
+	border-radius: 3px;
+	background: rgba(255, 255, 255, 0);
+	transition: 1s;
+	align-self: flex-end;
+	box-sizing: border-box;
+	margin-left: 262px;
+}
+
+.send:hover {
+	box-sizing: border-box;
+	cursor: pointer;
+	background-color: #15a4fa;
